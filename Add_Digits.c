@@ -6,7 +6,7 @@ int main()
     while(n)
     {
         d=n%10;
-        sum=sum+d;
+        sum+=d;
         n=n/10;
         if(n==0 && sum>9)
         {
