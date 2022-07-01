@@ -17,5 +17,6 @@ int main()
         s2+=arr[i];
     }
     printf("%d
-%d",s1,s2);
+" ,s1);
+    printf("%d",s2);
 }
