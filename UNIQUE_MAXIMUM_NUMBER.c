@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,j,c,k=0,x=0,a[100],b[100],max=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        c=0;
+        for(j=0;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                c+=1;
+            }
+        }
+        if(c==1)
+        {
+            b[k]=a[i];
+            k++;
+            x++;
+        }
+    }
+    if(x==0)
+    {
+        printf("-1");
+    }
+    else
+    {
+        max=b[0];
+        for(i=0;i<x;i++)
+        {
+            if(max<b[i])
+            {
+                max=b[i];
+            }
+        }
+        printf("%d",max);
+    }
+}
